@@ -1,0 +1,12 @@
+cv_bridge==1.16.0
+joblib==1.1.0
+matplotlib==3.1.2
+numpy==1.17.4
+opencv_python==4.5.5.62
+pandas==1.4.0
+pcl==0.0.0.post1
+python_pcl==0.3
+rospy==1.15.14
+scikit_learn==1.2.0
+sensor_msgs==1.13.1
+tensorflow==2.9.1

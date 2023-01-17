@@ -56,6 +56,7 @@ After subscribing to the filter topic **xy_filt_out**, the data is saved into a 
 A clustering algorithm is applied on the dataframe, this dataframe contained the cluster labels and data is then published as a 
 ``sensor_msgs/Image.msg``.
 Funtion used to cluster and publish data:
+
 .. code-block:: python
 
     def pcl_callback(self, data):

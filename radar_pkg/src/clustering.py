@@ -1,23 +1,13 @@
 #!/usr/bin/env python3
 import rospy
-import os
 import sys
 import pcl
 import numpy as np
 import sensor_msgs.point_cloud2 as pc2
 from sklearn.cluster import DBSCAN
-from matplotlib import pyplot as plt
 from pandas import DataFrame
-import cv2
-
 import pandas as pd
-import csv
-from matplotlib.patches import Rectangle
-from math import sqrt
-
-import keras
 import tensorflow.python.keras as keras
-from std_msgs.msg import String
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 
@@ -76,6 +66,7 @@ class cluster_pointcloud:
         return df_new, number_of_clusters
 
     def pcl_callback(self, data):
+        '''Function used to acquire raw data and publish the cluster dataframe. '''
         downsampled_list = []
         for data in pc2.read_points(
                 data,
